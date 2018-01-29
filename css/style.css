@@ -43,7 +43,6 @@ ul li {
 }
 #header .search{
   float: right;
-    position: absolute;
     right: 5px;
     padding: 5px;
 }
