@@ -46,7 +46,19 @@ ul li {
     right: 5px;
     padding: 5px;
 }
-
+#header .logo{
+  float: left;
+}
+#header .globe {
+  float: right;
+  padding-right: 0;
+}
+#header .globe ul{
+  float: right;
+}
+#header .globe i{
+  color:#095ab5;
+}
 #slider {
   background-image: url(../images/map.png);
   background-repeat: no-repeat;
