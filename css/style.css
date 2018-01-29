@@ -1,116 +1,52 @@
 body {
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 0rem;
+  background-color: #fff;
+  font-family: "Roboto Condensed",sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 ul li {
   list-style: none;
 }
 
-#header {
-  position: relative;
-  z-index: 200;
-  top: 0px;
-  float: right;
-  position: relative;
-  width: 95%;
-  height: 75px;
-  background: #00000069;
-}
 
-#header .nav-top {
+
+#header .top-bar img{
+      width: 279px;
+}
+#header .top {
+  background-image: url(../images/bg.png);
+  repeat:;
+}
+#header ul{
+    padding-left: 15px;
+}
+#header ul li {
+  float: left;
+}
+#header ul li {
+  padding-left:   10px;
+  padding-right: 10px;
+
+}
+#header .bottom{
+  background: #095ab5;
   height: 35px;
-  float: right;
-  border-bottom: 1px solid white;
-}
 
-#header .nav-menu {
-  height: 40px;
-  float: right;
 }
-
-#header .nav-menu {
-  margin: auto;
-  padding-right: 5px;
+#header ul li a{
+  line-height: 35px;
+  color: white;
 }
-
-#header .nav-menu ul {
-  float: right;
-}
-
-#header .nav-menu li {
-  position: relative;
-  list-style: none;
-  line-height: 40px;
-  float: left;
-}
-
-#header .nav-menu li a {
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 600;
-  text-transform: uppercase;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-#header .nav-menu li a:hover {
-  text-decoration: blink;
-}
-
 #header ul li ul {
-  position: absolute;
-  width: 200px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 2px 0px;
-  left: 0px;
-  top: 50px;
-  background-color: rgb(255, 255, 255);
   display: none;
-  padding: 0;
 }
-
-#header ul li ul li {
-  list-style: none;
+#header .search{
+  float: right;
+    position: absolute;
+    right: 5px;
+    padding: 5px;
 }
-
-#header ul li:hover ul {
-  display: block;
-}
-
-#header ul li:hover ul li {
-  float: none;
-}
-
-#header .logo {
-  float: left;
-  height: 75px;
-  background: white;
-}
-
-#header .logo a {
-  padding: 0;
-}
-
-#header .logo img {
-  height: 70px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-#header .logo-main {
-  padding-left: 0px;
-  position: absolute;
-  z-index: 2;
-}
-
-#header .search a {
-  padding-left: 0px;
-}
-
-#header .search i {
-  font-size: 20px;
-}
-
-/* slider  */
 
 #slider {
   background-image: url(../images/map.png);
