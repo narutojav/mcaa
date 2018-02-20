@@ -29,7 +29,11 @@ ul li {
 
 }
 #header .top-menu li a {
-color:#c3c3c3;
+  color: #c3c3c3;
+  padding-left: 10px;
+  border-right: 1px solid;
+  padding-right: 10px;
+  font-weight: 100;
 
 }
 
