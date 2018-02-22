@@ -9,18 +9,26 @@ body {
 #header ul li {
   list-style: none;
 }
-a:hover{
+
+a:hover {
   text-decoration: none;
 }
 
 #header .top {
   border-top: 4px solid #1c5aae;
   border-bottom: 4px solid #2d619b9e;
-  padding-top: 10px;
+  padding-top: 15px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 #header .logo {
   float: left;
+}
+
+#header .logo img {
+  /* width: 100%; */
+  margin-bottom: 5px;
 }
 
 #header .navmain {
@@ -62,6 +70,25 @@ a:hover{
   color: #1b5bb2;
   font-weight: 600;
   padding-left: 10px;
+
+}
+#header .bottom-menu li:hover ul{
+  display: block;
+}
+#header .bottom-menu li ul {
+  position: absolute;
+  display: none;
+  z-index: 233333;
+  background: white;
+  padding-left: 0;
+  padding-right: 10px;
+  border-top: 1px solid #2361b5;
+  width: auto;
+  margin-left: 10px;
+}
+
+#header .bottom-menu li ul li{
+  float: inherit;
 }
 
 #slider .swiper-container {
@@ -74,33 +101,33 @@ a:hover{
   background-position: center;
   opacity: 0.8;
   position: relative;
-
 }
-#slider .swiper-slide-prev p{
+
+#slider .swiper-slide-prev p {
   opacity: 0;
-
 }
-#slider .swiper-slide-prev .title{
+
+#slider .swiper-slide-prev .title {
   opacity: 0;
   transition: 1s;
-
 }
 
-#slider .swiper-slide-active .post p  {
+#slider .swiper-slide-active .post p {
   opacity: 1;
-
   transition: 2s
 }
+
 #slider .swiper-slide-active {
   background-size: cover;
   background-position: center;
   opacity: 1;
   position: relative;
-    transition: 3s;
-    -webkit-filter: sepia(0%); /* Safari */
-      filter: sepia(0%);
-
+  transition: 3s;
+  -webkit-filter: sepia(0%);
+  /* Safari */
+  filter: sepia(0%);
 }
+
 #slider .swiper-slide-active .title {
   -webkit-animation-name: slideInDown;
   animation-name: slideInDown;
@@ -112,7 +139,6 @@ a:hover{
   animation-fill-mode: both;
 }
 
-
 #slider .slide {
   position: relative;
 }
@@ -121,9 +147,8 @@ a:hover{
   position: absolute;
   right: 0;
   width: 350px;
-  margin-top:20%;
+  margin-top: 20%;
 }
-
 
 #slider .title {
   color: white;
@@ -134,26 +159,26 @@ a:hover{
   text-align: justify;
   font-weight: 600;
 }
-#slider .slide  a{
-background: white;
-border-radius: 9px;
-padding: 5px 12px 5px 12px;
-float: right;
 
+#slider .slide a {
+  background: white;
+  border-radius: 9px;
+  padding: 5px 12px 5px 12px;
+  float: right;
 }
-#slider .slide  a:after{
-content: '>';
-padding-left: 7px;
-font-weight:600;
 
+#slider .slide a:after {
+  content: '>';
+  padding-left: 7px;
+  font-weight: 600;
 }
+
 @-webkit-keyframes slideInDown {
   from {
     -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
     visibility: visible;
   }
-
   to {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
@@ -166,21 +191,18 @@ font-weight:600;
     transform: translate3d(0, -100%, 0);
     visibility: visible;
   }
-
   to {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
 }
 
-.slideInDown {
-
-}
+.slideInDown {}
 
 #slider .post p {
   color: white;
-    opacity: 0;
-    transition: 2s;
+  opacity: 0;
+  transition: 2s;
   line-height: 1.2;
   text-align: justify;
   margin-top: 12px;
@@ -193,7 +215,8 @@ font-weight:600;
   background: #fff;
   opacity: 0.6;
 }
-#slider .swiper-container-horizontal>.swiper-pagination-bullets{
+
+#slider .swiper-container-horizontal>.swiper-pagination-bullets {
   bottom: 30px;
 }
 
@@ -201,79 +224,177 @@ font-weight:600;
   opacity: 1;
   background: black;
 }
-#news{
+
+#news {
   margin-top: 20px;
 }
-#news h4{
+
+#news h4 {
   color: #1a5ab2;
   font-weight: 600;
 }
+
 #news .news h5 {
   font-weight: 600;
   text-transform: uppercase;
   text-align: justify;
   line-height: 130%;
 }
+
 #news .news {
   border-right: 1px solid #bababa;
 }
+
 #news .news:last-child {
   border-right: none;
 }
-#news .news img{
+
+#news .news img {
   width: 100%;
 }
-#news .news a{
+
+#news .news a {
   float: right;
   color: #ea8a00;
 }
-#legal{
+
+#news .left {
+  padding-left: 0;
+}
+
+#legal {
   position: relative;
   background: #e6e6e6;
 }
-#legal .legal{
-position: relative;
+
+#legal .legal {
+  position: relative;
 }
-#legal .title{
+
+#legal .title {
   text-align: center;
 }
-#legal .title h4{
+
+#legal .title h4 {
   color: #1a5ab2;
   font-weight: 600;
 }
-#partner{
+
+#partner {
   height: 140px;
   margin-top: 20px;
 }
+
 #footer {
   height: 300px;
   width: 100%;
   position: relative;
   background: #2a2a2a;
 }
-#legal .col-md-3{
-  padding-top: 25px;
-  padding-bottom:25px ;
 
+#legal .col-md-3 {
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
+
 #legal .col-md-3:nth-child(2) {
-    background: #dddddd;
+  background: #dddddd;
 }
+
 /* #legal::before{
   background: #bcbcbc;
 } */
+
 #legal .col-md-3:nth-child(3) {
-    background: #cdcdcd;
+  background: #cdcdcd;
 }
 
 #legal .bg {
-    height: 100%;
-    width: 50%;
-    position: absolute;
-    right: 0;
-    background: #bcbcbc;
-    /* overflow: hidden; */
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  right: 0;
+  background: #bcbcbc;
+  /* overflow: hidden; */
 }
-#news .left{
-  padding-left: 0;
+
+#collapse-btn {
+  display: none;
+}
+.overflow-hide{
+  overflow: hidden;
+}
+
+@media (max-width:800px) {
+  #header .logo img {
+    width: 80%;
+  }
+  #header .top {
+    padding-top: 5px;
+  }
+  #collapse-btn {
+    display: block;
+    position: absolute;
+    right: 15px;
+    font-size: 25px;
+    top: 22px;
+  }
+  #header .logo {
+    padding-bottom: 5px;
+    padding-left: 0;
+  }
+  .overplay {
+    background: #00000057;
+    width: 100%;
+    height: 100%;
+    position: ABSOLUTE;
+    z-index: 2;
+    display: none;
+    transition: 2s;
+  }
+  #header .top-menu {
+    padding-left: 0;
+    float: left;
+    width: auto;
+  }
+  #header .bottom-menu {
+    padding: 0;
+    float: left;
+  }
+  #header .bottom-menu li {
+    float: none;
+  }
+  #header .navmain {
+    position: absolute;
+    background: white;
+    z-index: 20;
+    right: -240;
+    height: 100%;
+    width: 236px;
+    TOP: 0px;
+    display: none;
+    box-shadow: -5px 0px 6px 2px #7d7d7d85;
+    transition: 2s;
+  }
+  #header .selected {
+    display: block;
+    right: 0;
+    transition: 4s;
+  }
+  #header .bottom-menu li ul {
+    position: relative;
+
+  }
+  #slider .swiper-container {
+    height: 300px;
+  }
+  #news .banner img {
+    width: 100%;
+  }
+  #slider .post {
+    position: absolute;
+    right: auto;
+    width: 90%;
+    margin-top: 19%;
+  }
 }
