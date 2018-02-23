@@ -25,8 +25,45 @@ var topswiper = new Swiper('#partner .swiper-container', {
   loop: true,
   autoplay: 4000,
   speed: 800,
-});
+  autoplay: {
+    delay: 3000,
 
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    // when window width is <= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10
+    },
+    // when window width is <= 480px
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    // when window width is <= 640px
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+    800: {
+      slidesPerView: 4,
+      spaceBetween: 30
+    }
+  }
+});
+$(window).scroll(function () {
+  var offset = $(".bottom-menu").offset();
+
+  if ($(window).scrollTop() >= 200) {
+    $(".navmain").addClass("fixed-menu");
+
+  }
+  else {
+    $(".navmain").removeClass("fixed-menu");
+  
+  }
+});
 
 $("#collapse-btn").click(function() {
   $("#header .navmain").addClass("selected");
