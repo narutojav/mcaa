@@ -71,80 +71,49 @@
     <div class="container">
 
       <div class="row main">
-        <div class="col-md-3">
-          <ul class="nav-side">
+        <div class="col-md-5 contact">
+          <ul>
             <li>
-              <a href="">Our Organisation</a>
-              <ul>
-                <li><a href="">Design Organisation Approval</a></li>
-                <li><a href="">Certification of Products & Articles</a></li>
-                <li><a href="" class="active-nav">Safety Series Events</a></li>
-              </ul>
+              <i class="fa fa-map-marker"></i>
+              <span> Post box 17120 Chinggis Khaan International Airport,  Khan-Uul district, 10th province, Buyant-Ukhaa, Ulaanbaatar, Mongolia </span>
             </li>
             <li>
-              <a href="">Areas of Responsibility</a>
+              <i class="fas fa-phone"></i>
+              <span>976-11-282051</span>
             </li>
             <li>
-              <a href="">Events</a>
+              <i class="fas fa-fax"></i>
+              <span>976-70049825</span>
             </li>
             <li>
-              <a href="">Careers</a>
+              <i class="fas fa-at"></i>
+              <span>info@mcaa.gov.mn</span>
             </li>
             <li>
-              <a href="">Scholarships</a>
-            </li>
-            <li>
-              <a href="">OInternships</a>
-            </li>
-            <li>
-              <a href="">Newsroom</a>
+              <i class="fas fa-globe"></i>
+              <span>www.mcaa.gov.mn</span>
             </li>
           </ul>
-          <!-- <div class="latest">
-            <h4>latest news</h4>
-          </div> -->
         </div>
-        <div class="col-md-9 about">
-          <p class="short">
-            The Civil Aviation Authority of Singapore (CAAS) is a Statutory Board under the Ministry of Transport. CAAS’ mission is to “Grow a safe, vibrant air hub and civil aviation system, making a key contribution to Singapore's success”. CAAS' roles are to enable
-            the growth of the air hub and aviation industry, oversee and promote safety in the industry, provide air navigation services, and develop Singapore as a centre of excellence for aviation knowledge and human resource development.
-          </p>
-
-          <div class="col-md-6">
-          <div class="img" style="background-image:url(images/mcaa.jpg);">
-            </div>
-            <a href=""><h3>Vision & Mission</h3>
-            <p>Learn about how MCAA is growing a safe, vibrant air hub and civil aviation system.</p>
-            </a>
-          </div>
-          <div class="col-md-6">
-            <div class="img" style="background-image:url(images/22.jpeg);">
-            </div>
-            <a href=""><h3>Structure</h3>
-            <p>Learn about how MCAA is growing a safe, vibrant air hub and civil aviation system.</p>
-            </a>
-          </div>
-          <div class="col-md-6">
-            <div class="img" style="background-image:url(images/mcaa.jpg);">
-            </div>
-            <a href=""><h3>Directors</h3>
-            <p>Learn about how MCAA is growing a safe, vibrant air hub and civil aviation system.</p>
-            </a>
-          </div>
-          <div class="col-md-6">
-            <div class="img" style="background-image:url(images/mcaa.jpg);">
-            </div>
-            <a href=""><h3>History</h3>
-            <p>Learn about how MCAA is growing a safe, vibrant air hub and civil aviation system.</p>
-            </a>
-
-          </div>
+        <div class="col-md-7">
+          <div id="map_canvas"></div>
         </div>
+
       </div>
     </div>
   </div>
   <style media="screen">
-
+  .contact ul li {
+    list-style: none;
+  }
+  .contact ul li i{
+    font-size: 30px;
+    color: #1c5aae;
+    margin-right: 20px;
+  }
+  .contact li span{
+    position: absolute;
+  }
   </style>
   <div id="footer">
     <div class="container ">
@@ -198,6 +167,9 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script charset="utf-8" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <script charset="utf-8" src="dist/js/swiper.min.js"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOaSmNcBHf07FWaVlO4pXgyFYMjmCPAEg" ></script>
+	<script type="text/javascript" src="javascripts/vendor/jquery.mapit.min.js"></script>
+	<script src="javascripts/initializers.js"></script>
   <script charset="utf-8" src="js/script.js"></script>
   <script charset="utf-8">
   </script>
