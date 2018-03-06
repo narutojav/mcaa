@@ -61,8 +61,8 @@
       </div>
     </div>
   </div>
-  <div id="cover-img" style="background-image:url(https://www.caas.gov.sg/images/default-source/image-library/img_3282.jpg)">
-    <!-- <div class="gradient"></div> -->
+  <div id="cover-img">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10709.264308923455!2d106.77049078462217!3d47.85284151453229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDfCsDUxJzEwLjIiTiAxMDbCsDQ2JzQ1LjQiRQ!5e0!3m2!1smn!2smn!4v1520305540410" width="100%" height="400" frameborder="0" style="border:0"></iframe>
     <div class="container">
       <h3>Safety Series Events</h3>
     </div>
@@ -71,7 +71,7 @@
     <div class="container">
 
       <div class="row main">
-        <div class="col-md-5 contact">
+        <div class="col-md-6 contact">
           <ul>
             <li>
               <i class="fa fa-map-marker"></i>
@@ -95,8 +95,33 @@
             </li>
           </ul>
         </div>
-        <div class="col-md-7">
-          <div id="map_canvas"></div>
+        <div class="col-md-6">
+          <form class="form-horizontal" action="/action_page.php">
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="email">Нэр:</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control"placeholder="Enter email">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="pwd">Имэйл:</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="pwd">Зурвас:</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-default">Илгээх</button>
+            </div>
+          </div>
+        </form>
         </div>
 
       </div>
@@ -113,6 +138,9 @@
   }
   .contact li span{
     position: absolute;
+  }
+  #map_canvas{
+    height: 400px;
   }
   </style>
   <div id="footer">
@@ -168,8 +196,8 @@
   <script charset="utf-8" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <script charset="utf-8" src="dist/js/swiper.min.js"></script>
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOaSmNcBHf07FWaVlO4pXgyFYMjmCPAEg" ></script>
-	<script type="text/javascript" src="javascripts/vendor/jquery.mapit.min.js"></script>
-	<script src="javascripts/initializers.js"></script>
+	<script type="text/javascript" src="dist/js/jquery.mapit.min.js"></script>
+	<script src="dist/js/initializers.js"></script>
   <script charset="utf-8" src="js/script.js"></script>
   <script charset="utf-8">
   </script>
